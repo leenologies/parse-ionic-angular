@@ -1,0 +1,16 @@
+<h1>Feed List</h1>
+<div class="list">
+  <div ng-repeat="feedItem in data.feed">
+    <div class="item item-divider">
+      {{feedItem.attributes.title}} uploaded by {{feedItem.attributes.uploader.attributes.username}}
+    </div>
+
+    <a class="item" href="#">
+      {{feedItem.attributes.geoPoint.latitude}},
+      {{feedItem.attributes.geoPoint.longitude}}
+    </a>
+  </div>
+
+  ...
+
+</div>
